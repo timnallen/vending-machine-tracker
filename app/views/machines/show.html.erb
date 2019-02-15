@@ -2,7 +2,7 @@
 
 <%= @machine.snacks.each do |snack| %>
   <section id='snack-<%= snack.id %>'>
-    <%= snack.name %>
-    <%= snack.price %>
+    <li><%= snack.name %>: <%= snack.price %></li>
   </section>
 <% end %>
+<p>Average Price: $<%= @machine.average_price %></p>
